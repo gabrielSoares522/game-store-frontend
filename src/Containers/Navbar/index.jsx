@@ -1,37 +1,28 @@
 import React from "react";
+import ItemNavbar from "../../Components/ItemNabar/index.jsx";
+import Pesquisa from "../../Components/Pesquisa/index.jsx";
+import "./style.css";
 
-const navStyle = {
-    background: '#fae55c',
-    padding: '10px',
-    margin: '0px',
-}
-const itemStyle ={
-    display: 'inline',
-}
+
 const Navbar = () => {
     const showCategory = () => {
         
     }
     return (
-        <nav style={navStyle}>
-            <ul>
-                <li style={itemStyle}> <a href="#">Inicio</a> </li>
-                <li style={itemStyle}> <a href="#" onClick={showCategory}>Categorias</a> </li>
-                <li style={itemStyle}> <a href="#">Anunciar</a> </li>
-                <li style={itemStyle}>
-                    <div>
-                    <form action="" method="get">
-                        <input name="search" placeholder="Buscar..." />
-                        <button type="submit">Buscar</button>
-                    </form>
-                    </div>
-                </li>
-                <li style={itemStyle}> <a href="#">Carrinho</a> </li>
-                <li style={itemStyle}> <a href="#">Entrar</a> </li>
-                <li style={itemStyle}> <a href="#">Cadastrar</a> </li>
+        <nav>
+            <ul className="lista">
+                <li>{ItemNavbar({"titulo": 'Inicio'})}</li>
+                <li>{ItemNavbar({titulo: 'Categorias'})}</li>
+                <li>{ItemNavbar({titulo: 'Anunciar'})}</li>
+                <li> {Pesquisa()} </li>
+                <li>{ItemNavbar({titulo: 'Carrinho'})}</li>
+                <li>{ItemNavbar({titulo: 'Entrar'})}</li>
+                <li>{ItemNavbar({titulo: 'Cadastrar'})}</li>
             </ul>
         </nav>
     );
 };
+/*
 
+*/
 export default Navbar;

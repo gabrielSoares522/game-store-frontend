@@ -1,5 +1,16 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+}
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#main{
+    height: auto;
+}
+.bloco{
+    width: 100%;
 }

@@ -1,0 +1,21 @@
+nav{
+    background: '#fae55c';
+    width: 100%;
+    height: 50px;
+    padding: '10px';
+    margin: '0px';
+}
+.lista{
+    list-style: none;
+    margin: '0px';
+    padding: '0px';
+    display: 'flex';
+    justify-content: 'space-around';
+    align-items: 'center';
+    flex-direction: row;
+    float: left;
+}
+.lista li{
+    text-decoration: none;
+    background-color: coral;
+}

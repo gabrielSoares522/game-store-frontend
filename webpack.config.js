@@ -33,4 +33,5 @@ module.exports = {
         maxAssetSize: 512000
     },
     mode: 'production',
+    devtool:"source-map",
 };
