@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import "./style.css";
 /*
 class ItemNavbar extends Component{
     render(){
@@ -11,7 +12,7 @@ class ItemNavbar extends Component{
 }*/
 function ItemNavbar(props){
     return(
-        <a href="#">{props.titulo}</a>
+        <button className={"item"} href="#">{props.titulo}</button>
     )
 }
 export default ItemNavbar;

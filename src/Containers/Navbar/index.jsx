@@ -9,17 +9,15 @@ const Navbar = () => {
         
     }
     return (
-        <nav>
-            <ul className="lista">
-                <li>{ItemNavbar({"titulo": 'Inicio'})}</li>
-                <li>{ItemNavbar({titulo: 'Categorias'})}</li>
-                <li>{ItemNavbar({titulo: 'Anunciar'})}</li>
-                <li> {Pesquisa()} </li>
-                <li>{ItemNavbar({titulo: 'Carrinho'})}</li>
-                <li>{ItemNavbar({titulo: 'Entrar'})}</li>
-                <li>{ItemNavbar({titulo: 'Cadastrar'})}</li>
-            </ul>
-        </nav>
+        <ul className={"lista"}>
+            <li>{ItemNavbar({"titulo": 'Inicio'})}</li>
+            <li>{ItemNavbar({titulo: 'Categorias'})}</li>
+            <li>{ItemNavbar({titulo: 'Anunciar'})}</li>
+            <li> {Pesquisa()} </li>
+            <li>{ItemNavbar({titulo: 'Carrinho'})}</li>
+            <li>{ItemNavbar({titulo: 'Entrar'})}</li>
+            <li>{ItemNavbar({titulo: 'Cadastrar'})}</li>
+        </ul>
     );
 };
 /*

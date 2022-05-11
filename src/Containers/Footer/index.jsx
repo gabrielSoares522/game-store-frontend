@@ -3,9 +3,7 @@ import "./style.css";
 
 const Footer = () => {
     return (
-        <footer>
-            <p>Footer</p>
-        </footer>
+        <p>Footer</p>
     );
 };
 

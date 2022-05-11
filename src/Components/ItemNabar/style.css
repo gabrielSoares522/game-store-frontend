@@ -1,0 +1,17 @@
+
+
+.item {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 2px;
+    padding: 5px;
+    
+    background-color: var(--button-color);
+    text-decoration-line: none;
+    border: none;
+}
+.item:hover{
+    background-color: var(--button-color-hover);
+    cursor: pointer;
+}
